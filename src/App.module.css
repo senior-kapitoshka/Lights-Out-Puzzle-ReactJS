@@ -1,0 +1,246 @@
+/*
+  меню спускается сверху вниз
+*/
+.startMenuDown{
+    border-width: 87%;
+    font-family: monospace;
+    margin:2% 6% 1%;
+    border: 5px solid black;
+    border-radius: 30px;
+    
+    animation: flydown;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    
+  }
+  
+/*
+  меню поднимается снизу вверх
+*/
+
+  .startMenuUp{
+    border-width: 87%;
+    font-family: monospace;
+    margin:2% 6% 1%;
+    border: 5px solid black;
+    border-radius: 30px;
+  
+    animation: flyup;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+   
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+
+  /*
+  игровое поле спускается сверху вниз
+*/
+  .fieldDown{
+    border-width: 87%;
+    font-family: monospace;
+    margin:2% 6% 1%;
+    border: 5px solid black;
+    border-radius: 30px;
+
+    animation: flydown;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  
+/*
+  меню поднимается снизу вверх
+*/
+
+  .fieldUp{
+    border-width: 87%;
+    font-family: monospace;
+    margin:2% 6% 1%;
+    border: 5px solid black;
+    border-radius: 30px;
+  
+    animation: flyup;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+
+
+ /*
+  анимация для спуска вниз блока
+*/
+
+  @keyframes flydown{
+    0% {
+      left: 0;
+      transform: translateY(-100%)
+    }
+    100% {
+      left: 100%;
+      transform: translateY(0)
+    }
+  }
+ /*
+  анимация для поднятия вверх блока
+*/
+
+  @keyframes flyup{
+  0% {
+      left: 0;
+      transform: translateY(0)
+    }
+    100% {
+      left: 100%;
+      transform: translateY(-100%)
+    }
+  }
+
+  /*-------------------*/
+ /*
+  контейнер для игровых кнопок в рабочем состоянии 
+*/
+
+  .tilesContainer{
+    position: relative;
+    justify-content: space-evenly;
+     align-items: anchor-center;
+     width: 48%;
+     padding: 1% 12.6% 6% 12.6%;
+     top: 30%;
+     left: 12.3%;
+     display:table; 
+   }
+
+/*
+  контейнер для игровых кнопок в изчезающем состоянии 
+*/
+
+   .tilesContainerDsp{
+    position: relative;
+    justify-content: space-evenly;
+     align-items: anchor-center;
+     width: 48%;
+     padding: 1% 12.6% 6% 12.6%;
+     top: 30%;
+     left: 12.3%;
+     display:table; 
+
+     animation-name: dsp;
+  animation-duration: 5s;
+  animation-direction: both;
+  animation-iteration-count: 1;
+   }
+
+/*
+  контейнер для игровых кнопок в изчезнувшем состоянии 
+*/
+
+   .tilesContainerDspCmp{
+    position: relative;
+    justify-content: space-evenly;
+     align-items: anchor-center;
+     width: 48%;
+     padding: 1% 12.6% 6% 12.6%;
+     top: 30%;
+     left: 12.3%;
+     display:table; 
+
+     animation-name: dspCmp;
+    animation-duration: 5s;
+    animation-direction: both;
+    animation-iteration-count: infinite;
+   }
+
+    /*
+  контейнер для счета ходов в рабочем состоянии 
+*/
+
+   .score{
+    float:right;
+    padding:2% 6% ;
+    display: grid;
+  }
+
+  /*
+  контейнер для счета ходов в исчезающем состоянии 
+*/
+
+  .scoreDsp{
+    float:right;
+    padding:2% 6% ;
+    display: grid;
+    animation-name: dsp;
+  animation-duration: 5s;
+  animation-direction: both;
+  animation-iteration-count: 1;
+  }
+
+    /*
+  контейнер для счета ходов в исчезнувшем состоянии 
+*/
+
+  .scoreDspCmp{
+    float:right;
+    padding:2% 6% ;
+    display: grid;
+    animation-name: dspCmp;
+  animation-duration: 5s;
+  animation-direction: both;
+  animation-iteration-count: infinite;
+  }
+
+/*
+  анимация для изчезания
+*/
+
+   @keyframes dsp {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+/*
+  анимация для полного изчезания
+*/
+
+  @keyframes dspCmp{
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

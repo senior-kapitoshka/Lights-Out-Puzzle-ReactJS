@@ -1,0 +1,64 @@
+
+/* start menu */
+.startMenuContainer{
+  justify-content: center;
+  width: 67%;
+  padding: 2% 17.5% 10%;
+  align-items: center;
+  display:inline-block; 
+}
+
+.header{
+  position: relative;
+  text-align: center;
+  font-size: 5em;
+}
+
+/*.selectors{
+  padding: 1% 2% 3% 4%;
+}*/
+
+.sugg{
+  width: 51%;
+  display:inline-block; 
+  margin: 0.3em 2.5% 0.3em 0;
+}
+
+.sizeSelect{
+  width: 20.5%;
+  display:inline-block;
+  margin: 0em 2.5% 0em 0;
+}
+.modeSelect{
+  width: 20.5%;
+  display:inline-block;
+  margin: 0em 2.5% 0em 0;
+}
+.startButton{
+  position: relative;
+  display:inline-block;
+  margin: 3em 0.5% 0.3em 0;
+}
+
+/* field */
+
+.winner{
+  width: 40%;
+  top: 30%;
+  left: 28%;
+  /*margin:2% 30% 41.5%;*/
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  border: 5px solid black;
+    border-radius: 30px;
+
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.restart{
+  float:left;
+  padding:2% 6% ;
+}
+
