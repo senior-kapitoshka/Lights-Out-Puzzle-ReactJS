@@ -1,0 +1,186 @@
+@import url("animation.css");
+
+/* winner */
+.winner{
+    z-index: 1;
+    display: block;
+  width: 50%;
+  top: 30%;
+  left: 25.5%;
+  position: absolute;
+  text-align: center;
+  font-size: 3.5vw;
+  border: 5px solid black;
+    border-radius: 30px;
+    font-family: 'Share Tech Mono', sans-serif;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.winner::before,.winner::after{
+  margin: -0.2%;
+  padding: 0 12.2%;
+  position:absolute;
+  content:attr(data-text);
+  display: block;
+  top: 0;
+  left: 8.5%;
+}
+
+.winner::before{
+  animation: glitch 5s both infinite;
+  color:aqua;
+  z-index: -1;
+}
+
+.winner::after{
+  animation: glitch 5s reverse both infinite;
+  color: blueviolet;
+  z-index: -2;
+}
+
+.rectangle-8 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 3px;
+  width: 110px;
+  top:48%;
+  left:60.4%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+.rectangle-9 {
+  position:absolute;
+  background-color:  aqua;
+  height: 2px;
+  width: 138px;
+  top:47.2%;
+  left:63.8%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+
+.rectangle-10 {
+  position:absolute;
+  background-color: aqua;
+  height: 2px;
+  width: 91.5px;
+  top:59%;
+  left:18%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+.rectangle-11 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 2px;
+  width: 80.2px;
+  top:60.2%;
+  left:15%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+
+.rectangle-15 {
+  position:absolute;
+  background-color: black;
+  height: 0.8px;
+  width: 40px;
+  top:61.2%;
+  left:20%;
+  animation: glitchRectangle 5s reverse both infinite;
+
+}
+
+.rectangle-12 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 2px;
+  width: 15px;
+  top:34.1%;
+  left:27%;
+  animation: glitchRectangle 5s reverse both infinite;
+
+}
+.rectangle-13 {
+  position:absolute;
+  background-color: aqua;;
+  height: 1px;
+  width: 52px;
+  top:34%;
+  left:21%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-14 {
+  position:absolute;
+  background-color: black;
+  height: .8px;
+  width: 23px;
+  top:33.3%;
+  left:23.2%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-16 {
+  position:absolute;
+  background-color: black;
+  height: .8px;
+  width: 23px;
+  top:63%;
+  left:50%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-17 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 1.9px;
+  width: 27.5px;
+  top:57%;
+  left:47.5%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+.rectangle-18 {
+  position:absolute;
+  background-color: aqua;
+  height: .8px;
+  width: 21px;
+  top:60.02%;
+  left:48.2%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-19 {
+  position:absolute;
+  background-color: aqua;
+  height: .8px;
+  width: 19px;
+  top:42.3%;
+  left:40.1%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-20 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 1.42px;
+  width: 13px;
+  top:44.3%;
+  left:40.25%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}
+
+.rectangle-21 {
+  position:absolute;
+  background-color: black;
+  height: 0.4px;
+  width: 9px;
+  top:44.3%;
+  left:40.5%;
+  animation: glitchRectangle 5s reverse both infinite;
+  
+}

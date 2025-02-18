@@ -1,0 +1,34 @@
+@import url("animation.css");
+
+.scoreLabel{
+    box-sizing: border-box;
+    position: relative;
+    font-size: 2vw;
+  
+    font-family: 'Share Tech Mono', sans-serif;
+    text-align: center;
+      z-index: 1;
+      display: block;
+  }
+  
+  .scoreLabel::before,.scoreLabel::after{
+    margin: -0.2%;
+    padding: 5% 7%;
+    position:absolute;
+    content:attr(data-text);
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  
+  .scoreLabel::before{
+    animation: glitch 5s both infinite;
+    color:aqua;
+    z-index: -1;
+  }
+  
+  .scoreLabel::after{
+    animation: glitch 5s reverse both infinite;
+    color: blueviolet;
+    z-index: -2;
+  }

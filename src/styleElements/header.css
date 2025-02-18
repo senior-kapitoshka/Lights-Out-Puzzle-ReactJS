@@ -1,0 +1,112 @@
+@import url("animation.css");
+
+/*header*/
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+.headerContainer{
+  position: relative;
+}
+
+.rectangle-1 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 3px;
+  width: 170px;
+  top:48%;
+  left:60.4%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+.rectangle-3 {
+  position:absolute;
+  background-color:  aqua;
+  height: 2px;
+  width: 163px;
+  top:47.2%;
+  left:63.8%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+
+.rectangle-2 {
+  position:absolute;
+  background-color: aqua;
+  height: 2px;
+  width: 300px;
+  top:58%;
+  left:5%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+.rectangle-4 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 3px;
+  width: 260px;
+  top:59.2%;
+  left:9%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+
+.rectangle-5 {
+  position:absolute;
+  background-color: blueviolet;
+  height: 3px;
+  width: 50px;
+  top:34.1%;
+  left:23%;
+  animation: glitchRectangle 5s reverse both infinite;
+}
+.rectangle-6 {
+  position:absolute;
+  background-color: aqua;;
+  height: 1px;
+  width: 100px;
+  top:34%;
+  left:21%;
+  animation: glitchRectangle 5s reverse both infinite;    
+}
+
+.rectangle-7 {
+  position:absolute;
+  background-color: black;
+  height: 1px;
+  width: 25px;
+  top:33.3%;
+  left:22.4%;
+  animation: glitchRectangle 5s reverse both infinite;    
+}
+
+
+.header{
+  margin: -0.5%;
+  padding: 5% 12.5%;
+  box-sizing: border-box;
+  position:relative;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 8vw;
+    text-align: center;
+    z-index: 1;
+    display: block;
+}
+
+.header::before,.header::after{
+  margin: -0.2%;
+  padding: 5% 12.5%;
+  position:absolute;
+  content:attr(data-text);
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.header::before{
+  animation: glitch 5s both infinite;
+  color:aqua;
+  z-index: -1;
+}
+
+.header::after{
+  animation: glitch 5s reverse both infinite;
+  color: blueviolet;
+  z-index: -2;
+}
+

@@ -1,12 +1,38 @@
 import { useState,useReducer } from "react";
 import classes from "./App.module.css";
 const Tile=({showWin,className, buttonSize, clickCD, onSelect=(_)=>_})=>{
+
     return(
-        <button className={className} 
+        <button 
+                className={className} 
                 onClick={onSelect}
                 disabled={showWin}
-                style={{width: buttonSize, height: buttonSize, backgroundColor: clickCD?'black':'white' }}
-        ></button>);
+                style={{width: buttonSize, height: buttonSize, background: clickCD?
+                    `radial-gradient( farthest-corner at 9vw 7.5vw,
+                    rgba(40, 40, 40, 0.726) 2%,
+                    rgb(3, 1, 15)45%,
+                    rgb(0, 0, 0) 80%,
+                    blueviolet 97% ,
+                    aqua 98%
+                  )`:
+                  `radial-gradient(
+                    farthest-corner at .1vw .1vw,
+                    rgb(255, 255, 255) 54%,
+                    rgb(223, 218, 218) 90%,
+                    rgb(183, 182, 182) 98%,
+                    rgb(128, 128, 128) 100%
+                  )` }}
+        ><div className={clickCD?"scan-line":""}>
+            </div>
+            <div className={clickCD?"scan-line1":""}>
+            </div>
+            <div className={clickCD?"scan-line2":""}>
+            </div>
+            <div className={clickCD?"scan-line3":""}>
+            </div>
+             
+            
+        </button>);
 }
 
 let cntWin=0;
@@ -17,7 +43,7 @@ function Field({randomFlag,mx, fieldSize}){
     
     const n = fieldSize.value;
     let [cnt,setCnt]=useState(0);
-    const buttonSize = parseInt(Math.floor(30/n))+'em';
+    const buttonSize = parseInt(Math.floor(39/n))+'vw';
 
     const [cd,setCd]=useState(mx);
     
@@ -33,8 +59,8 @@ function Field({randomFlag,mx, fieldSize}){
 
 
     const checkMx=(mx)=>{
-        for(let x=0;x<15;++x){
-            for(let y=0;y<15;++y){
+        for(let x=0;x<10;++x){
+            for(let y=0;y<10;++y){
                 if(mx[x][y]===true) return false;
             }
         }
@@ -89,30 +115,45 @@ function Field({randomFlag,mx, fieldSize}){
             <div className="field">
                  
                     <div className={dsp.score}>
-                        score: {cnt}
-                        {!randomFlag &&
-                            <label className="reset">
-                                <input
-                                    className="resetButton"
-                                    type="submit"
-                                    value={"reset"}
-                                    onClick={()=>reset()}
-                                />
-        
-                            </label> }
+                        <label className={randomFlag?classes.resetDspCmp:classes.reset}>
+                            <button
+                                className="resetButton"
+                                type="submit"
+                                onClick={()=>reset()}
+                            >
+                                <span>reset</span>
+                                <span>reset</span>
+                                <span>reset</span>
+                                <span>reset</span>
+                            </button>
+                        </label> 
+                        <label className="scoreLabel" data-text={`score: ${cnt}`}>score: {cnt}</label>
                     </div>
                 
                 <div className={dsp.tiles}>
                     {tiles}
                 </div>
                     {showWin && 
-                    <p className="winner">
+                    <p className="winner" data-text={`your score is ${cntWin}`}>
                         your score is {cntWin}
+                        <div class="rectangle-8"></div> 
+                        <div class="rectangle-9"></div> 
+                        <div class="rectangle-10"></div> 
+                        <div class="rectangle-11"></div>
+                        <div class="rectangle-12"></div>
+                        <div class="rectangle-13"></div>
+                        <div class="rectangle-14"></div>
+                        <div class="rectangle-15"></div> 
+                        <div class="rectangle-16"></div>
+                        <div class="rectangle-17"></div>
+                        <div class="rectangle-18"></div>
+                        <div class="rectangle-19"></div> 
+                        <div class="rectangle-20"></div>
+                        <div class="rectangle-21"></div>
                     </p>
                     }
             </div>
         </>
     )
 };
-
 export default Field;

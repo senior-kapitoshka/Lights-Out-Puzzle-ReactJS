@@ -1,0 +1,142 @@
+@keyframes glitchRectangle{
+    0% {
+      transform: translate(0);
+      opacity:0;
+  }
+  0.5% {
+    transform: translate(-3px, -3px);
+    opacity:0.8;
+  }
+  1% {
+    transform: translate(3px, 3px);
+    opacity:0.8;
+  }
+  2% {
+    transform: translate(0);
+    opacity:0;
+  }
+  100% {
+    transform: translate(0);
+    opacity:0;
+  }
+  }
+  
+
+  @keyframes glitch{
+    0% {
+      transform: translate(0);
+      opacity:0;
+  }
+  1% {
+    transform: translate(-3px, -3px);
+    opacity:0.8;
+  }
+  5% {
+    transform: translate(3px, 3px);
+    opacity:0.8;
+  }
+  10% {
+    transform: translate(0);
+    opacity:0;
+  }
+  100% {
+    transform: translate(0);
+    opacity:0;
+  }
+  }
+
+
+  @keyframes glitchRectangleTile{
+    0% {
+      transform: translate(0);
+      opacity:0;
+  }
+  0.2% {
+    transform: translate(-3px, -3px);
+    opacity:0.8;
+  }
+  0.4% {
+    transform: translate(3px, 3px);
+    opacity:0.8;
+  }
+  0.6% {
+    transform: translate(0);
+    opacity:0;
+  }
+  100% {
+    transform: translate(0);
+    opacity:0;
+  }
+  }
+
+  @keyframes scan {
+    0% { top: -2%; }
+    30%{ top: 99%;}
+    100% { top: 99%; }
+  }
+  
+  @keyframes scan2 {
+    0% { top: -4%; }
+    30%{ top: 96%;}
+    100% { top: 98.5%; }
+  }
+  @keyframes noise2 {
+    0% { top: 67%; 
+        opacity: 0.8;}
+    5%{ top: 67%; 
+      opacity: 0.1;}
+    10%{ top: 74%; 
+        opacity: 0.6;}
+    12%{ top: 67%; 
+      opacity: 0.1;} 
+    15%{ top: 74%; 
+      opacity: 0.8;} 
+    25%{ top: 67%; 
+      opacity: 0.1;} 
+    26%{ top: 74%; 
+      opacity: 0.8;}   
+      25%{ top: 67%; 
+        opacity: 0.1;} 
+      26%{ top: 74%; 
+        opacity: 0.4;}   
+  
+    100% { top: 67%; 
+      opacity: 0.8;}
+  }
+  
+  @keyframes noise {
+    0% { top: -2%; 
+        opacity: 0.8;}
+    5%{ top: -2%; 
+      opacity: 0.1;}
+    10%{ top: -2%; 
+        opacity: 0.6;}
+    12%{ top: -2%; 
+      opacity: 0.1;} 
+    15%{ top: -2%; 
+      opacity: 0.8;} 
+    25%{ top: -2%; 
+      opacity: 0.1;} 
+    26%{ top: -2%; 
+      opacity: 0.8;}   
+      25%{ top: -2%; 
+        opacity: 0.1;} 
+      26%{ top: -2%; 
+        opacity: 0.4;}   
+  
+    100% { top: -2%; 
+      opacity: 0.8;}
+  }
+
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+
+  /*-------*/
+
+
+

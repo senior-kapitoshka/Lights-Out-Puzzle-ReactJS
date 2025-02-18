@@ -9,11 +9,6 @@ const levels=[
   {value:8,label:"8x8"},
   {value:9,label:"9x9"},
   {value:10,label:"10x10"},
-  {value:11,label:"11x11"},
-  {value:12,label:"12x12"},
-  {value:13,label:"13x13"},
-  {value:14,label:"14x14"},
-  {value:15,label:"15x15"},
 ];
 
 const modes=[
@@ -34,9 +29,26 @@ const Selector = ({setFieldSize, setMode}) =>{
     menuList: styles => {
       return {
         ...styles,
-        maxHeight: 72
+        maxHeight: 72,
+        color: 'black',
+        background:`radial-gradient(
+          farthest-corner at .1vw .1vw,
+          rgb(255, 255, 255) 54%,
+          rgb(223, 218, 218) 90%,
+          rgb(183, 182, 182) 98%,
+          rgb(128, 128, 128) 100%
+        )`,
+        borderColor:"hotpink",
       };
-    }
+    },
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isSelected ? 'black' : 'inherit',
+    }),
+    control: (baseStyles, state) => ({
+      ...baseStyles,
+      borderColor: state.isSelected?'black':'black',
+    })
   };
 
   return(
@@ -57,6 +69,7 @@ const Selector = ({setFieldSize, setMode}) =>{
     options={modes}
     onChange={(mode)=>{setMode(mode);
       }}
+      styles={selectStyles}
     />
    </div> 
   </>);

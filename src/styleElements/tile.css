@@ -1,0 +1,86 @@
+@import url("animation.css");
+
+
+
+.tile{
+    border-width: 2.1px;
+    border-width:2.1px;
+    border-block-style: groove;
+    filter: sepia(13%) hue-rotate(15deg) saturate(90%);
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 6px;
+      transition: 0.4s;
+    transform-style: preserve-3d;
+    transform: perspective(1000vw) rotateX(0deg);
+  }
+  
+  .scan-line {
+    position: absolute;
+    width: 90%;
+    height: 0.3vw;
+    background: linear-gradient(
+      to right,
+      transparent,
+      aqua,
+    blueviolet,
+    black,
+    rgb(3, 1, 15),
+      transparent
+    );
+    top: 0;
+    left:5%;
+    animation: scan 15s linear infinite;
+    filter: blur(1px);
+  }
+  .scan-line1 {
+    position: absolute;
+    width: 70%;
+    height: .7vw;
+    background: linear-gradient(
+      to right,
+      transparent,
+      aqua,
+      rgb(205, 205, 205),
+    blueviolet,
+      transparent
+    );
+    top: 0;
+    left:0%;
+    filter: blur(2px);
+    animation: noise 15s linear infinite;
+  }
+  
+  .scan-line2 {
+    position: absolute;
+    width: 90%;
+    height: 0.5vw;
+    background: linear-gradient(
+      to right,
+      transparent,
+      white,
+      transparent
+    );
+    top: 0;
+    left:40%;
+    animation: scan2 15s linear infinite;
+    filter: blur(3.5px);
+  }
+  
+  .scan-line3 {
+    position: absolute;
+    width: 9%;
+    height: 3vw;
+    background: linear-gradient(
+      to right,
+      transparent,
+      white,
+      transparent
+    );
+    top: 67%;
+    left:-5%;
+    filter: blur(3px);
+    animation: noise2 15s linear infinite;
+  }
+  
