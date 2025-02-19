@@ -16,12 +16,16 @@ const Tile=({showWin,className, buttonSize, clickCD, onSelect=(_)=>_})=>{
                     aqua 98%
                   )`:
                   `radial-gradient(
-                    farthest-corner at .1vw .1vw,
+                    farthest-corner at 7vw .1vw,
                     rgb(255, 255, 255) 54%,
                     rgb(223, 218, 218) 90%,
                     rgb(183, 182, 182) 98%,
                     rgb(128, 128, 128) 100%
-                  )` }}
+                  )`,
+                  transition: "0.4s",
+                  transformStyle: "preserve-3d",
+                  transform:clickCD?`perspective(1000vw) rotateX(0deg)`:
+                  `perspective(1000vw) rotateY(180deg)` }}
         ><div className={clickCD?"scan-line":""}>
             </div>
             <div className={clickCD?"scan-line1":""}>
