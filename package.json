@@ -1,5 +1,6 @@
 {
   "name": "lights_out",
+  "homepage": "https://senior-kapitoshka.github.io/Lights-Out-Puzzle-ReactJS/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +10,6 @@
     "react-dom": "^19.0.0",
     "react-grid": "^4.0.4",
     "react-grid-layout": "^1.5.0",
-    "react-html-parser": "^2.0.2",
     "react-scripts": "5.0.1",
     "react-select": "^5.10.0"
   },
@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
