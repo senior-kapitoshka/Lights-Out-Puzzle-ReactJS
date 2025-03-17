@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Lights-Out-Puzzle-ReactJS/static/css/main.62c6818d.css",
+    "main.js": "/Lights-Out-Puzzle-ReactJS/static/js/main.93c0787c.js",
+    "static/js/488.7b4d2f7f.chunk.js": "/Lights-Out-Puzzle-ReactJS/static/js/488.7b4d2f7f.chunk.js",
+    "index.html": "/Lights-Out-Puzzle-ReactJS/index.html",
+    "main.62c6818d.css.map": "/Lights-Out-Puzzle-ReactJS/static/css/main.62c6818d.css.map",
+    "main.93c0787c.js.map": "/Lights-Out-Puzzle-ReactJS/static/js/main.93c0787c.js.map",
+    "488.7b4d2f7f.chunk.js.map": "/Lights-Out-Puzzle-ReactJS/static/js/488.7b4d2f7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62c6818d.css",
+    "static/js/main.93c0787c.js"
+  ]
+}
